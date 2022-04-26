@@ -1,0 +1,693 @@
+:root{
+    --amarillo:#ff2e;
+    --blue:#08d9;
+    --black:#252a34;
+    --white:#e1eaea;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: "Releway",sans-serif;
+}
+
+/**ir abrriba**/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border: 2px solid palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.go-top > span:hover{
+color: white;
+} 
+.go-top:hover{
+    background: palevioletred;
+    color: #fff;
+    border: 2px solid white;
+}
+.go-top > span{
+    font-size: 30px;
+    color: black;
+}
+
+
+/**menu**/
+
+#header{
+    position: relative;
+    width: 100%;
+
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: mediumvioletred;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu.logo-box{
+    margin-left: 20px;
+    
+
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    font-family: cursive;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container ul{
+display: flex;
+}
+.menu .list-container ul li {
+    list-style: none;
+}
+.menu .list-container ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    transition: 0.3s ;
+    font-size: 16px;
+}
+.menu .list-container ul li a.activo{
+    background-color: palevioletred;
+    color: #fff;
+}
+
+
+.menu .list-container ul li a:hover{
+    background-color:mediumorchid;
+    color: #fff;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+
+} 
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://fondosmil.com/fondo/1619.jpg");
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome >button{
+    width: 170px;
+    height: 40px;
+    background-color: rgb(209, 52, 105);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .welcome>button:hover{
+    background-color: mediumorchid;
+}
+
+.acerca-de{
+    width: 100%;
+    margin-top: 20px ;
+    background:pink;
+
+}
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+.acerca-de .info-container .about-galery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+}
+
+.acerca-de .info-container .about-galery img{
+    width: calc(33.333%-10px);
+    height: 200px;
+    margin: 10px 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.acerca-de .info-container .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.acerca-de .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background:palevioletred;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.acerca-de .info-container .about-more button:hover{
+    background-color: mediumorchid;
+}
+
+
+
+
+
+.our-proyects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("https://fondosmil.com/fondo/1619.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.our-proyects .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+}
+.our-proyects .ejezproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-proyects .container-project{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-proyects .container-project .proyect-title{
+    border: 2px solid #fff;
+    padding:  10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.our-proyects .container-project .proyect-title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+.our-proyects .container-project .proyect-title hr{
+    background: #fff;
+    width: 50%;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.our-proyects .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8px;
+    padding-bottom: 100px;
+}
+
+.our-proyects .container-project .project-img img{
+    width: calc(30%-10px);
+    margin: 7px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+   
+}
+
+.testimonios .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.testimonios .testimonios-title hr{
+    width: 60px;
+    height: 2px;
+    margin: auto;
+    background: black;
+}
+
+.testimonios .box-testimonio{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios .box-testimonio .card-testimonio{
+    width: 45%;
+    margin: 20px;
+
+}
+.testimonios .box-testimonio .card-testimonio .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.testimonios .box-testimonio .card-testimonio .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-text{
+    border: 2px solid palevioletred;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.1s;
+   
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: palevioletred;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    font-family: cursive;
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-text:hover{
+    border: 2px solid turquoise;
+}
+.testimonios .box-testimonio.card-testimonio .testimonio-text:hover h4{
+    color: turquoise;
+}
+
+/*pie de pagiana*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    background: url("https://fondosmil.com/fondo/1619.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .deg-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+}
+.footer .ejezfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid #ffff;
+    padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .footer-content .footer-title hr{
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    margin: auto;
+}
+.footer .formulario-content{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    border: 1.5px solid palevioletred;
+    margin-bottom: 100px;
+}
+
+.footer .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .formulario-content #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 30px 0px 10px 0px;
+}
+.footer .formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-radius: 24px;
+    outline: none;
+    border: 1.5px solid palevioletred;
+    text-align: center;
+    font-size: 18px;
+    color:black;
+}
+.footer .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border-radius: 24px;
+    outline: none;
+    border: 1.5px solid palevioletred;
+    padding: 20px;
+    font-size: 15px;
+    color:black;
+}
+.footer .formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer .formulario-content #formulario .send button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background:palevioletred;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .formulario-content #formulario .send button:hover{
+background: magenta;
+}
+.footer .formulario-content #formulario .mensaje-form{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.footer .formulario-content #formulario .mensaje-form p{
+    font-size: 19px;
+    color: black;
+    line-height: 35px;
+}
+
+.footer .footer-tex{
+   position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:2px solid #fff ;
+}
+.footer .footer-tex p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen  and (min-width:680px)
+{
+    
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 28px;
+        color:black;
+        transition: 0.5s;
+        cursor: pointer;
+
+    }
+    .btn-menu > .fa-bars:hover{
+        color: mediumorchid;
+    }
+   
+    .btn-menu >.fa-times{
+        color: palevioletred;
+
+    }
+    .menu .list-container{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: #ffff;
+        width: 100%;
+        height: calc(100vh - 60px);
+
+
+    }
+    .menu .list-container .list{
+        width: 100%;
+        height: 100%;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 4px solid palevioletred;
+
+    }
+    .menu .list-container .list li{
+        width: 90%;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: center;
+
+    }
+    .menu .list-container .list li a{
+        font-size: 20px;
+        text-align: center;
+        padding: 12px 0px;
+    }
+    .menu .list-container .list li a.activo{
+        background: none;
+        color: palevioletred;
+
+    }
+    .menu .list-container .list li a:hover{
+        background: none;
+        color: mediumorchid;
+    }
+}
+
+
+
+
+
+.tutorialfrio{
+    width: 100%;
+    margin-top: 120px;
+    background: palevioletred;
+   
+}
+
+
+.tutorialfrio .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+}
+.tutorialfrio .testimonios-title h2{
+    font-size: 50px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tutorialfrio .testimonios-title hr{
+    width: 60px;
+    height: 2px;
+    margin: auto;
+    background: black;
+}
+
+.tutorialfrio .box-testimonio{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tutorialfrio .box-testimonio .card-testimonio{
+    width: 45%;
+    margin: 20px;
+
+}
+.tutorialfrio .box-testimonio .card-testimonio .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+#cabeza{
+    position: relative;
+    width: 100%;
+    
+}
+
+.menu2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: mediumvioletred;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu2 h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+
